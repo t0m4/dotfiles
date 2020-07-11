@@ -1,0 +1,31 @@
+# alias ls="ls -Gfhl"
+alias ls="exa -lha --icons"
+alias lsg="exa -lha --icons --git"
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# git aliases
+alias g='git'
+alias ga='git add'
+alias gb='git branch'
+alias gcmsg='git commit -m'
+alias gd='git diff'
+alias gst='git status'
+alias gc='git checkout'
+alias ggpull='git pull origin $(git_current_branch)'
+alias ggpush='git push origin $(git_current_branch)'
+alias gcm='git checkout master && ggpull'
+alias gcr='git checkout release && ggpull'
+
+# pm2 aliases
+alias p2rr='pm2 restart'
+alias p2ls='pm2 ls'
+alias p2stop='pm2 stop'
+alias p2start='pm2 start'
+alias p2logs='pm2 logs'
+alias p2del='pm2 delete'
+alias p2kill='pm2 kill'
+
+# dev aliases
+alias gt='grunt test'

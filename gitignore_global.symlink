@@ -1,0 +1,27 @@
+# OS related files
+.DS_Store
+
+# IDE
+.idea
+irony
+
+# Javascript
+jsconfig.json
+typings
+npm-debug.log
+.flowconfig
+nodemon*
+ecosystem.json
+
+# Tag files
+TAGS
+GTAGS
+GPATH
+GRTAGS
+.tern-port
+.tern-project
+
+.env
+
+*.cert
+.vscode

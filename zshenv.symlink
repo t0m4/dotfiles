@@ -1,0 +1,21 @@
+export GOROOT=/usr/local/go
+export PATH="$GOROOT/bin:/usr/local/opt/python@2/libexec/bin:~/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.cargo/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:~/GOlibs:$PATH"
+
+export EDITOR="mcedit"
+# export RBENV_ROOT="$(brew --prefix rbenv)"
+# export GEM_PATH="$(brew --prefix)/opt/gems"
+export GPG_TTY=$(tty)
+
+export NVM_AUTO_USE=true
+export NVM_COMPLETION=true
+
+HISTSIZE=20000
+SAVEHIST=20000
+
+if [ -f $HOME/.secretsenv ]; then
+  source $HOME/.secretsenv
+fi
+
+if [ -f $HOME/.additionalenv ]; then
+  source $HOME/.additionalenv
+fi
