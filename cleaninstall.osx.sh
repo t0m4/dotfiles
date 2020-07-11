@@ -6,6 +6,9 @@ echo "Installing Homebrew..."
 echo "Installing iterm2..."
 brew cask install iterm2
 
+echo "Installing exa..."
+brew install exa
+
 echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
