@@ -12,7 +12,7 @@ copy_config() {
       targetFileName="${targetBaseFileName/\.symlink/}"
       target="$UserData/$targetFileName"
 
-      if [ -f "$target" ]; then
+      if [ -f "$target" ] || [ -h "$target" ]; then
         if [ -L "$target" ]; then
           echo "$target link exists, deleting"
           rm "$target"
@@ -43,7 +43,7 @@ link_config() {
         ln -s $DOTFILES/$file "$target"
       }
 
-      if [ -f "$target" ]; then
+      if [ -f "$target" ] || [ -h "$target" ]; then
         if [ ! -L "$target" ]; then
           echo "$target file exists, moving to $target.bak"
           mv "$target" "$target.bak"
@@ -54,7 +54,7 @@ link_config() {
           if [ $linkRealPath != "$DOTFILES/$file" ]; then
             echo "Symlink target path does not match!"
             echo "Current: $linkRealPath"
-            echo "New: "$DOTFILES/$file""
+            echo "New: $DOTFILES/$file"
 
             read -n1 -p "Want to set the link to the new location? [Y,n]" wantReLink
             case $wantReLink in

@@ -7,7 +7,7 @@ copy_envs() {
       targetFileName=".$( basename $file ".symlink" )"
       target="$HOME/$targetFileName"
 
-      if [ -f "$target" ]; then
+      if [ -f "$target" ] || [ -h "$target" ]; then
         if [ -L "$target" ]; then
           echo "$target link exists, deleting"
           rm "$target"
@@ -46,7 +46,7 @@ link_envs() {
           if [ $linkRealPath != "$DOTFILES/$file" ]; then
             echo "Symlink target path does not match!"
             echo "Current: $linkRealPath"
-            echo "New: "$DOTFILES/$file""
+            echo "New: $DOTFILES/$file"
 
             read -n1 -p "Want to set the link to the new location? [Y,n]" wantReLink
             case $wantReLink in

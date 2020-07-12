@@ -8,6 +8,7 @@ brew upgrade
 
 echo "Installing iterm2..."
 brew cask install iterm2
+sh ./restore-iterm2.sh
 
 echo "Installing Docker..."
 brew cask install docker
