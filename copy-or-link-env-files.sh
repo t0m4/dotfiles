@@ -1,5 +1,5 @@
 DOTFILES=$(pwd)
-linkables=$( ls -1 -d *.symlink )
+linkables=$( ls -1 -d zsh-env-files/*.symlink )
 
 copy_envs() {
   echo "Copying env files..."
@@ -35,7 +35,7 @@ link_envs() {
         ln -s $DOTFILES/$file "$target"
       }
 
-      if [ -f "$target" ]; then
+      if [ -f "$target" ] || [ -h "$target" ]; then
         if [ ! -L "$target" ]; then
           echo "$target file exists, moving to $target.bak"
           mv $target "$target.bak"
