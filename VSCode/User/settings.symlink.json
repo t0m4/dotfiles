@@ -1,0 +1,21 @@
+{
+    "workbench.colorTheme": "Fresh Material - Indigo",
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "editor.fontSize": 10,
+    "files.autoSave": "onFocusChange",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "all",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "gitlens.currentLine.enabled": false,
+    "editor.fontFamily": "Fira Code ,Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "window.zoomLevel": 0,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font"
+}

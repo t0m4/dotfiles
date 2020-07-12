@@ -2,9 +2,20 @@
 
 echo "Installing Homebrew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew upgrade
 
 echo "Installing iterm2..."
 brew cask install iterm2
+
+echo "Installing Docker..."
+brew cask install docker
+
+echo "Installing Visual Studio Code..."
+brew cask install visual-studio-code
+sh ./restore-vscode.sh
+
+echo "Installing Slack..."
+brew cask install slack
 
 echo "Installing exa..."
 brew install exa
@@ -46,3 +57,5 @@ chsh -s /bin/zsh
 echo "Install ready"
 echo "You can add $HOME/.secretsenv file to store your environment credentials, it will be automatically sourced."
 echo "You can add $HOME/.additionalenv file to store your store your custom environment variables, it will be automatically sourced."
+
+exit 1
