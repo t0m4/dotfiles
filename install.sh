@@ -29,6 +29,13 @@ brew cask install slack
 echo "Installing exa..."
 brew install exa
 
+echo "Installing fzf..."
+brew install fzf
+$(brew --prefix)/opt/fzf/install
+
+echo "Installing bat..."
+brew install bat
+
 echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 

@@ -8,6 +8,7 @@ export GPG_TTY=$(tty)
 
 export NVM_AUTO_USE=true
 export NVM_COMPLETION=true
+export BAT_PAGER="less -RF"
 
 HISTSIZE=20000
 SAVEHIST=20000

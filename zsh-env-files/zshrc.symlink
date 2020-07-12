@@ -10,6 +10,8 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle lukechilds/zsh-nvm
+antigen bundle unixorn/autoupdate-antigen.zshplugin
+antigen bundle Aloxaf/fzf-tab
 
 # workaround for https://github.com/zsh-users/antigen/issues/675
 THEME=romkatv/powerlevel10k

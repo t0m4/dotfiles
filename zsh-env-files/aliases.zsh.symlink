@@ -29,3 +29,4 @@ alias p2kill='pm2 kill'
 
 # dev aliases
 alias gt='grunt test'
+alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
