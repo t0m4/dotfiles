@@ -2,6 +2,8 @@
 
 echo "Installing Homebrew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+brew tap homebrew/cask-fonts
 brew upgrade
 
 echo "Installing iterm2..."
@@ -9,6 +11,12 @@ brew cask install iterm2
 
 echo "Installing Docker..."
 brew cask install docker
+
+echo "Installing CaskaydiaCove Nerd font..."
+brew cask install font-CaskaydiaCove-nerd-font
+
+echo "Installing Fire Code font..."
+brew cask install font-fira-code
 
 echo "Installing Visual Studio Code..."
 brew cask install visual-studio-code
@@ -29,27 +37,7 @@ curl -L git.io/antigen > ~/antigen.zsh
 echo "Installing zsh..."
 brew install zsh
 
-DOTFILES=$(pwd)
-
-echo "Creating symlinks..."
-linkables=$( ls -1 -d *.symlink )
-for file in $linkables ; do
-    target="$HOME/.$( basename $file ".symlink" )"
-
-    if [ -f "$target" ]; then
-      if [ ! -L "$target" ]; then
-        echo "$target file exists, moving to $target.bak"
-        mv $target "$target.bak"
-      fi
-    fi
-
-    if [ ! -L "$target" ]; then
-      echo "Creating symlink for $file..."
-      ln -s $DOTFILES/$file $target
-    else
-      echo "Symlink exists for $target, skipping..."
-    fi
-done
+sh ./copy-or-link-env-files.sh
 
 echo "Switching default shell to zsh"
 chsh -s /bin/zsh

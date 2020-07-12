@@ -56,7 +56,7 @@ link_config() {
             echo "Current: $linkRealPath"
             echo "New: "$DOTFILES/$file""
 
-            read -n1 -p "Want to set the link to the new location? [y,n]" wantReLink
+            read -n1 -p "Want to set the link to the new location? [Y,n]" wantReLink
             case $wantReLink in
               y|Y) refresh_link ;;
               n|N) echo "Skipping..." ;;
@@ -66,11 +66,14 @@ link_config() {
             echo "Symlink exists for $target, skipping..."
           fi
         fi
+      else
+        echo "Creating symlink for $file..."
+        ln -s $DOTFILES/$file "$target"
       fi
   done
 }
 
-read -n1 -p "Should link the setting files (in case of no, default action is copy instead of linking)? [y,n]" doit
+read -n1 -p "Should link the setting files (in case of no, default action is copy instead of linking)? [Y,n]" doit
 case $doit in
   y|Y) link_config ;;
   n|N) copy_config ;;
