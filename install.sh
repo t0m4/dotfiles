@@ -29,6 +29,9 @@ brew cask install slack
 echo "Installing exa..."
 brew install exa
 
+echo "Installing spectacle..."
+brew cask install spectacle
+
 echo "Installing fzf..."
 brew install fzf
 $(brew --prefix)/opt/fzf/install
