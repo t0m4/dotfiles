@@ -41,6 +41,11 @@ brew install bat
 
 echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+nvm install lts/*
+nvm use lts/*
+
+echo "Installing pm2..."
+npm i -g pm2
 
 echo "Installing antigen ZSH package manager..."
 curl -L git.io/antigen > ~/antigen.zsh
