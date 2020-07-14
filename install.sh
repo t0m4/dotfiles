@@ -41,8 +41,10 @@ brew install bat
 
 echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-nvm install lts/*
-nvm use lts/*
+
+read -n1 -p "What should be the default node version be:" defaultNodeVersion
+nvm install "$defaultNodeVersion"
+nvm use "$defaultNodeVersion"
 
 echo "Installing pm2..."
 npm i -g pm2
