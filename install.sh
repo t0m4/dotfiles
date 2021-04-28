@@ -7,33 +7,33 @@ brew tap homebrew/cask-fonts
 brew upgrade
 
 echo "Installing iterm2..."
-brew cask install iterm2
+brew install --cask iterm2
 sh ./restore-iterm2.sh
 
 echo "Installing Docker..."
-brew cask install docker
+brew install --cask docker
 
 echo "Installing CaskaydiaCove Nerd font..."
-brew cask install font-CaskaydiaCove-nerd-font
+brew install --cask font-CaskaydiaCove-nerd-font
 
 echo "Installing Fire Code font..."
-brew cask install font-fira-code
+brew install --cask font-fira-code
 
 echo "Installing Visual Studio Code..."
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 sh ./restore-vscode.sh
 
 echo "Installing Slack..."
-brew cask install slack
+brew install --cask slack
 
 echo "Installing exa..."
 brew install exa
 
 echo "Installing spectacle..."
-brew cask install spectacle
+brew install --cask spectacle
 
 echo "Installing mcedit..."
-brew cask install mcedit
+brew install --cask mcedit
 
 echo "Installing fzf..."
 brew install fzf
