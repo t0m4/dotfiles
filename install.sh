@@ -55,13 +55,13 @@ npm i -g pm2
 echo "Installing antigen ZSH package manager..."
 curl -L git.io/antigen > ~/antigen.zsh
 
-echo "Installing zsh..."
-brew install zsh
+# echo "Installing zsh..."
+# brew install zsh
 
 sh ./copy-or-link-env-files.sh
 
-echo "Switching default shell to zsh"
-chsh -s /bin/zsh
+# echo "Switching default shell to zsh"
+# chsh -s /bin/zsh
 
 echo "Install ready"
 echo "You can add $HOME/.secretsenv file to store your environment credentials, it will be automatically sourced."
