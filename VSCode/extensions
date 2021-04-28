@@ -1,6 +1,7 @@
 2ndshift.fresh-material
 aaron-bond.better-comments
 alex-young.pm2-explorer
+apollographql.vscode-apollo
 bierner.markdown-preview-github-styles
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
@@ -12,6 +13,10 @@ eriklynd.json-tools
 esbenp.prettier-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
+ms-python.python
+ms-toolsai.jupyter
+ms-vscode.vscode-typescript-tslint-plugin
+ms-vsliveshare.vsliveshare
 oderwat.indent-rainbow
 vincaslt.highlight-matching-tag
 VisualStudioExptTeam.vscodeintellicode
