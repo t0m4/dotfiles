@@ -8,7 +8,7 @@ antigen use oh-my-zsh
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-history-substring-search
-antigen bundle zdharma/fast-syntax-highlighting
+antigen bundle zdharma-continuum/fast-syntax-highlighting
 antigen bundle lukechilds/zsh-nvm
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle Aloxaf/fzf-tab
