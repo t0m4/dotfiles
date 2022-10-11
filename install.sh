@@ -14,7 +14,7 @@ echo "Installing Docker..."
 brew install --cask docker
 
 echo "Installing CaskaydiaCove Nerd font..."
-brew install --cask font-CaskaydiaCove-nerd-font
+brew install --cask font-hack-nerd-font
 
 echo "Installing Fire Code font..."
 brew install --cask font-fira-code
@@ -45,7 +45,7 @@ brew install bat
 echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
-read -e -p "What should be the default node version be:" defaultNodeVersion
+read -p "What should be the default node version be:" defaultNodeVersion
 nvm install "$defaultNodeVersion"
 nvm use "$defaultNodeVersion"
 
