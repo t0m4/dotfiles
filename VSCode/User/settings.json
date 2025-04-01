@@ -1,0 +1,85 @@
+{
+    "workbench.colorTheme": "Moonlight II",
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "editor.fontSize": 10,
+    "files.autoSave": "onFocusChange",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "all",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "gitlens.currentLine.enabled": false,
+    "editor.fontFamily": "Fira Code ,Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "terminal.integrated.fontFamily": "'Hack Nerd Font'",
+    "editor.autoClosingQuotes": "always",
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "eslint.workingDirectories": [
+        { "directory": "./__LEGACY__" },
+        { "directory": "./server" },
+        { "directory": "./client" },
+    ],
+    "liveshare.presence": true,
+    "auto-close-tag.disableOnLanguage": [
+        "javascript",
+        "typescript"
+    ],
+    "typescript.preferences.quoteStyle": "single",
+    "editor.bracketPairColorization.enabled": true,
+    "sops.defaults.awsProfile": "plano",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "sql-formatter.uppercase": true,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "cloudcode.debug-kubernetes": {
+        "suppressNodeJSWarning": true
+    },
+    "gist.maxFiles": 50,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "totalTypeScript.hiddenTips": [
+        "ts-object-type",
+        "basic-types"
+    ],
+    "redhat.telemetry.enabled": true,
+    "application.shellEnvironmentResolutionTimeout": 120,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "[nginx]": {
+        "editor.defaultFormatter": "raynigon.nginx-formatter"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "vscode_custom_css.imports": [
+        "file:///Users/tamassandor/.vscode/extensions/robbowen.synthwave-vscode-0.1.15/synthwave84.css"
+    ],
+    "editor.semanticHighlighting.enabled": true,
+    "extensions.ignoreRecommendations": true,
+    "github.copilot.chat.localeOverride": "en",
+    "github.copilot.chat.welcomeMessage": "always",
+    "prettier.useEditorConfig": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "eslint.useFlatConfig": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "github.copilot.selectedCompletionModel": "claude-3.7-sonnet"
+}
