@@ -2,13 +2,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+export PROJECT_ROOT=~/dev/theGarage
 source $HOME/antigen.zsh
 
 antigen use oh-my-zsh
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-history-substring-search
-antigen bundle zdharma-continuum/fast-syntax-highlighting
+antigen bundle z-shell/F-Sy-H --branch=main
 antigen bundle lukechilds/zsh-nvm
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle Aloxaf/fzf-tab
@@ -24,3 +25,30 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source ~/.aliases.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/tamassandor/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tamassandor/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/tamassandor/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tamassandor/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+
+# Load Angular CLI autocompletion.
+# source <(ng completion script)
+
+
+# conda deactivate
+# conda activate garage38
+# export PROJECT_ROOT='/Users/tamassandor/dev/theGarage'
+
+alias shipit=$PROJECT_ROOT/Trax/Deployment/Tools/Shipit/ship.sh
+alias envupdate=$PROJECT_ROOT/Trax/Tools/Git/Scripts/env_update.sh
+alias envcreate=$PROJECT_ROOT/Trax/Tools/Git/Scripts/env_create.sh
+
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

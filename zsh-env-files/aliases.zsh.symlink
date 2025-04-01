@@ -1,4 +1,4 @@
-# alias ls="ls -Gfhl"
+alias ls="ls -Gfhl"
 alias ls="exa -lha --icons"
 alias lsg="exa -lha --icons --git"
 alias ..='cd ..'
@@ -30,5 +30,7 @@ alias p2kill='pm2 kill'
 
 # dev aliases
 alias gt='grunt test'
-alias cat="bat -p --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
-alias catb="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
+# alias cat="bat -p --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
+# alias catb="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
+
+alias pjscripts="cat ./package.json | jq '.scripts'"

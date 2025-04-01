@@ -45,12 +45,10 @@ brew install bat
 echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
-read -p "What should be the default node version be:" defaultNodeVersion
+read -p "What should the default Node.js version be (e.g., 16.14.0): " defaultNodeVersion
 nvm install "$defaultNodeVersion"
 nvm use "$defaultNodeVersion"
 
-echo "Installing pm2..."
-npm i -g pm2
 
 echo "Installing antigen ZSH package manager..."
 curl -L git.io/antigen > ~/antigen.zsh
